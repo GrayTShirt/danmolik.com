@@ -4,9 +4,11 @@ Personal Website
 Installation
 ------------
 
-# Nginx compiled w/Embedded Perl
-# Template-Toolkit
-# Try and not overwrite all the nginx configs :)
+1. Nginx compiled w/Embedded Perl
+2. Template-Toolkit
+3. Try and not overwrite all the nginx configs :)
 
 commands:
-```sudo make install
+```shell
+sudo make install
+```
