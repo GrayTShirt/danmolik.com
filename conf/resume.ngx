@@ -3,7 +3,7 @@ perl_require resume.pm;
 
 server {
 	listen 80;
-	server_name resume;
+	server_name danmolik.com;
 
 	access_log /var/log/nginx/$server_name.log main;
 	error_log  /var/log/nginx/error.log info;
