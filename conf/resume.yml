@@ -1,0 +1,86 @@
+Skills:
+  OS:
+    - GNU/Linux
+    - Centos
+    - Redhat
+    - Debian
+    - Ubuntu
+    - Gentoo
+  Languages:
+    - Perl
+    - C
+    - Bash
+  Version Control:
+    - Git
+    - Subversion
+  Testing:
+    - Perl TAP
+    - Selenium
+    - Phantomjs
+    - Unit
+  Monitoring:
+    - Nagios
+    - Icinga
+    - Ganglia
+    - RRDTool
+    - Real User Monitoring
+    - Synthetic Browser Monitoring
+  Configuration Management:
+    - puppet
+    - clockwork
+
+Experiance:
+  - name: Synacor Inc.
+    location: Buffalo, New York
+    title: Monitoring Tools Engineer
+    duration: February 2013 to present
+    description: As part of a three man team, we are responsible for performance  and production quality of over 5 thousand hosts. Projects include Synthetic Monitoring, dashboard maintenance, and check development.
+
+  - name: Tetherless World Research Constellation
+    location: Troy, New York
+    title: Systems Administrator
+    duration: May 2012 to January 2013
+    description: Maintained small infrastructure, deployed heterogeneous configuration management and performance monitoring, deployed puppet, Icinga and ganglia, to automate and instrument semantic web research support.
+
+  - name: Buffalo Neuroimaging Analysis Center
+    location: Buffalo, New York
+    title: Systems Administrator
+    duration: July 2011 to April 2012
+    description: Duties included day to day maintenance of workstations, production machines and off site web based services. Other duties include office automation and upgrading systems security and availability. Projects have included procuring a new network attached storage system, procuring a new printer and developing a system to migrate to a new Kerberos based authentication system.
+
+  - name: Nuclear Regulatory Commission; Office of Nuclear Reactor Regulation; Division of Risk Assessment; PRA Licensing Branch
+    location: Rockville, Maryland
+    title: Intern
+    duration: Summer 2010
+    description: Duties included preforming licensing review on probabilistic related sections of amendments. Also wrote a presentation comparing the Deepwater Horizon oil rig explosion to nuclear disasters and practices. Finally, helped migrate the branch to a Microsoft Sharepoint site.
+
+  - name: Department of Energy; West Valley Demonstration Project
+    location: West Valley, New York
+    title: Intern
+    duration: Summer 2009
+    description: Preformed review for the environmental impact statement for phase 2 of the site decommissioning. Also assisted in the day to day project management of certain projects, including the new strontium 90 retention trench.
+
+  - name: Constellation Energy; Nine Mile Point Nuclear Power Station Probabilistic Risk Assessment
+    location: Scriba, New York
+    title: Intern
+    duration: Summer 2008
+    description: Assisted on work for the Unit 2 Extended Power Uprate to increase fuel load. Preformed a follow up investigation to a non-critical failure of the Unit 2 instrument air system.
+
+  - name: Conestoga Rovers and Associates
+    location: Depew, New York
+    title: Intern
+    duration: Summer 2007
+    description: Responsibilities included updating complex air quality spreadsheets and writing code to sample downwind pollutants based on meteorological data.
+
+  - name: Philmont Scout Ranch, Conservation Department
+    location: Cimmaron, New Mexico
+    title: Work Crew
+    duration: Summer 2006
+    description: Philmont receive over a hundred thousand campers every summer over a million acres, duties included maintaining trail, bear lines and campsites, to pristine condition. While living on the trail for 9 days at a time I learned to appreciate living and working in close  proximity to other people.
+
+Education:
+  - B.S. Mechanical Engineering December 2011. State University of New York at Buffalo.
+
+Awards:
+  - Eagle Scout; Boy Scouts of America, 2003.
+  - National Honor Medal; Boy Scouts of America, 2003.
