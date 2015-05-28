@@ -77,7 +77,9 @@ my $home_page   = _render;
 my $resume_page = _render
 qq@
 [% FOR section IN resume.Skills %]
-<div class="section">
+<div id="skills" class="section">
+<span class="section_title">Skills</skills>
+<div class="sub_section">
 	<span class="skill_type">[% section.key %]</span>
 	<ul>
 	[% FOR skills IN section.value %]
@@ -86,6 +88,19 @@ qq@
 		[% END %]
 	[% END %]
 	</ul>
+</div>
+</div>
+
+<div id="experiance" class="section">
+</div>
+
+<div id="" class="section">
+</div>
+
+<div id="education" class="section">
+</div>
+
+<div id="awards" class="section">
 </div>
 [% END %]
 @;
