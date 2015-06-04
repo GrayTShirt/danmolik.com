@@ -76,33 +76,48 @@ sub _render
 my $home_page   = _render;
 my $resume_page = _render
 qq@
-[% FOR section IN resume.Skills %]
 <div id="skills" class="section">
-<span class="section_title">Skills</skills>
-<div class="sub_section">
-	<span class="skill_type">[% section.key %]</span>
-	<ul>
-	[% FOR skills IN section.value %]
-		[% FOR skill IN skills %]
-		<li>[% skill %]</li>
+	<span class="section_title">Skills</skills>
+	[% FOR section IN resume.Skills %]
+	<div class="sub_section skills">
+		<span class="skill_type">[% section.key %]</span>
+		<ul class="skills">
+		[% FOR skills IN section.value %]
+			[% FOR skill IN skills %]
+			<li>[% skill %]</li>
+			[% END %]
 		[% END %]
+		</ul>
+	</div>
 	[% END %]
-	</ul>
-</div>
 </div>
 
-<div id="experiance" class="section">
-</div>
-
-<div id="" class="section">
+<div id="experience" class="section">
+<span class="section_title">Experience</skills>
+	[% FOR job IN resume.Experience %]
+	<div class="sub_section job">
+		<span class="job_name">[% job.name %]</span>
+		<span class="job_title">[% job.title %]</span>
+		<span class="job_location">[% job.location    %]</span>
+		<span class="job_duration">[% job.duration    %]</span>
+		<p class="job_description">[% job.description %]</p>
+	</div>
+	[% END %]
 </div>
 
 <div id="education" class="section">
+	<span class="section_title">Education</skills>
+	[% FOR school IN resume.Education %]
+	<p class="school">[% school %]</p>
+	[% END %]
 </div>
 
 <div id="awards" class="section">
+	<span class="section_title">Awards</skills>
+	[% FOR award IN resume.Awards %]
+	<p class="award">[% award %]</p>
+	[% END %]
 </div>
-[% END %]
 @;
 
 use Data::Dumper;

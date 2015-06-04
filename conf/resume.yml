@@ -1,3 +1,7 @@
+Contact:
+  email:        dan@danmolik.com
+  display name: Dan Molik
+
 Skills:
   OS:
     - GNU/Linux
@@ -14,10 +18,13 @@ Skills:
     - Git
     - Subversion
   Testing:
-    - Perl TAP
+    - TAP
     - Selenium
     - Phantomjs
     - Unit
+    - Full Stack
+    - TDD
+    - BDD
   Monitoring:
     - Nagios
     - Icinga
@@ -25,11 +32,12 @@ Skills:
     - RRDTool
     - Real User Monitoring
     - Synthetic Browser Monitoring
+    - RCA
   Configuration Management:
     - puppet
     - clockwork
 
-Experiance:
+Experience:
   - name: Synacor Inc.
     location: Buffalo, New York
     title: Monitoring Tools Engineer
