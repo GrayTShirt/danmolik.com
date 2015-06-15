@@ -25,12 +25,23 @@ a:hover {
 	width:      80%;
 	margin:     0px auto -4em;
 	min-height: 100%;
-	height:     100%;
-	position:   relative;
+	margin-bottom: -24px;
 }
-
+#container:after {
+	content: "";
+	display: block;
+}
+#container:after, #footer {
+	  height: 24px;
+}
+#footer {
+	font-size:   76%;
+	margin:     0px auto -4em;
+	width:       80%;
+	padding-top: 6px;
+	border-top:  1px solid #CCC;
+}
 #header {
-	height:        56px;
 	padding-top:   15px;
 	margin-bottom: 15px;
 	border-bottom: 1px solid #CCC;
@@ -46,23 +57,56 @@ a:hover {
 #header .title a:hover {
 }
 
-#mid {
-	padding-left: 15px;
+#topbar ul {
+	font-size: 18px;
+}
+#topbar li {
+	display: inline;
 }
 
-#sidebar ul {
-	font-size: 72%;
+
+.section {
+	width: 100%;
+	display: block;
 }
-#footer {
-	font-size:   76%;
-	position:    absolute;
-	bottom:      0;
-	padding-top: 6px;
-	height:      2em;
-	width:       100%;
-	border-top:  1px solid #CCC;
+.section_title {
+	float: left;
+}
+.section_data {
+	float:         right;
+	width:         92%;
+	border-left:   1px solid #CCC;
+	padding-left:  12px;
+	margin-bottom: 18px;
+}
+.clear-split {
+	clear: both;
 }
 
+span.skill_type {
+	display: inline;
+	font-weight: bold;
+}
+ul.skills {
+	display: inline;
+}
 ul.skills li {
 	display: inline;
+}
+
+span.job_name {
+	font-weight: bold;
+	display: block;
+}
+span.job_title {
+	display: block;
+}
+span.job_location {
+	display: block;
+}
+span.job_duration {
+	display: block;
+}
+div.job {
+	margin-bottom: 12px;
 }

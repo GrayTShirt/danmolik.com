@@ -3,7 +3,7 @@ Contact:
   display name: Dan Molik
 
 Skills:
-  OS:
+  Operating Systems:
     - GNU/Linux
     - Centos
     - Redhat
@@ -13,18 +13,21 @@ Skills:
   Languages:
     - Perl
     - C
-    - Bash
+    - Shell
+    - Javascript
+    - HTML
+    - CSS
   Version Control:
     - Git
     - Subversion
   Testing:
-    - TAP
+    - TAP (Test Anywhere Protocol)
     - Selenium
     - Phantomjs
     - Unit
     - Full Stack
-    - TDD
-    - BDD
+    - TDD (Test Driven Development)
+    - BDD (Behavior Driven Development)
   Monitoring:
     - Nagios
     - Icinga
@@ -34,8 +37,8 @@ Skills:
     - Synthetic Browser Monitoring
     - RCA
   Configuration Management:
-    - puppet
-    - clockwork
+    - Puppet
+    - Clockwork
 
 Experience:
   - name: Synacor Inc.

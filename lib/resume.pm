@@ -13,6 +13,7 @@ my $CONFIG           = LoadFile "/usr/share/nginx/conf.yml";
 sub _render
 {
 	my $CONTENT = shift;
+	my %options = @_;
 	$CONTENT ||= "";
 	my $header = qq@
 	<div id="header">
@@ -22,9 +23,9 @@ sub _render
 	@;
 
 	my $footer = qq@
-	<div id="footer">
-		&copy; [% date.year %]
-	</div>
+	<footer id="footer">
+		&copy; [% date.year %] Dan Molik
+	</footer>
 	@;
 
 	my $template = qq@
@@ -43,21 +44,19 @@ sub _render
 	<body>
 		<div id="container">
 			$header
-			<div id="mid">
-				<div id="sidebar">
-					<ul>
-						<li><a href="/resume">Resume</a></li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/projects">Projects</a></li>
-						<li><a href="/docs">Technical Links</a></li>
-					</ul>
-				</div>
-				<div id="content">
-					$CONTENT
-				</div>
+			<div id="topbar">
+				<ul>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/docs">Technical Links</a></li>
+				</ul>
 			</div>
-			$footer
+			<div id="content">
+				$CONTENT
+			</div>
 		</div>
+		$footer
 	</body>
 	</html>
 	@;
@@ -69,7 +68,7 @@ sub _render
 		\$template,
 		$CONFIG,
 		\$html);
-	# $html =~ s/[\t\n]//g;
+	$html =~ s/[\t\n]//g if $options{compress};
 	$html;
 }
 
@@ -77,25 +76,29 @@ my $home_page   = _render;
 my $resume_page = _render
 qq@
 <div id="skills" class="section">
-	<span class="section_title">Skills</skills>
+	<span class="section_title">Skills</span>
+	<div class="section_data skills">
 	[% FOR section IN resume.Skills %]
-	<div class="sub_section skills">
+	<div class="skill">
 		<span class="skill_type">[% section.key %]</span>
 		<ul class="skills">
 		[% FOR skills IN section.value %]
 			[% FOR skill IN skills %]
-			<li>[% skill %]</li>
+			<li>[% skill %],</li>
 			[% END %]
 		[% END %]
 		</ul>
 	</div>
 	[% END %]
+	</div>
+	<div class="clear-split"></div>
 </div>
 
 <div id="experience" class="section">
-<span class="section_title">Experience</skills>
+	<span class="section_title">Experience</span>
+	<div class="section_data jobs">
 	[% FOR job IN resume.Experience %]
-	<div class="sub_section job">
+	<div class="job">
 		<span class="job_name">[% job.name %]</span>
 		<span class="job_title">[% job.title %]</span>
 		<span class="job_location">[% job.location    %]</span>
@@ -103,20 +106,28 @@ qq@
 		<p class="job_description">[% job.description %]</p>
 	</div>
 	[% END %]
+	</div>
+	<div class="clear-split"></div>
 </div>
 
 <div id="education" class="section">
-	<span class="section_title">Education</skills>
-	[% FOR school IN resume.Education %]
-	<p class="school">[% school %]</p>
-	[% END %]
+	<span class="section_title">Education</span>
+	<div class="section_data education">
+		[% FOR school IN resume.Education %]
+		<p class="school">[% school %]</p>
+		[% END %]
+	</div>
+	<div class="clear-split"></div>
 </div>
 
 <div id="awards" class="section">
-	<span class="section_title">Awards</skills>
-	[% FOR award IN resume.Awards %]
-	<p class="award">[% award %]</p>
-	[% END %]
+	<span class="section_title">Awards</span>
+	<div class="section_data awards">
+		[% FOR award IN resume.Awards %]
+		<p class="award">[% award %]</p>
+		[% END %]
+	</div>
+	<div class="clear-split"></div>
 </div>
 @;
 
