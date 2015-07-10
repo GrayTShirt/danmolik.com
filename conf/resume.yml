@@ -45,7 +45,12 @@ Experience:
     location: Buffalo, New York
     title: Monitoring Tools Engineer
     duration: February 2013 to present
-    description: As part of a three man team, we are responsible for performance  and production quality of over 5 thousand hosts. Projects include Synthetic Monitoring, dashboard maintenance, and check development.
+    description: As the most senior Monitoring engineer, I am tasked with the performance and visibility of 4500 hosts, 120,000 checks, and 1.2 million datapoints, across 9 data-centers. I am responsible for a series of Nagios/Icinga high availability server pairs in each of the data-centers, along with dedicated log processing and offload worker servers. All other responsibilities are derived from this monitoring and visibility Mandate.
+      Over the past 2 years I have gone from knowing nothing about Perl, to using it to write stats checks, email step-through, and a synthetic/front end testing system, known as Lithium.
+      Lithium is a Selenium WebDriver/Full Stack framework for monitoring production, business critical, user-models, such as log-ins, Javascript rendered content, and menubar functionality. The key to Lithium's success is making the transition from a highly parallel web-browser domain to serial monitoring steps, seamless and straight forward.
+      Additionally my duties include a 24/7 on-call rotation, where I am called on a consistent basis, to consult on issues related to the operability of Synacor's systems.
+      I also consult with engineering and operational teams at Synacor as to the best method to monitor new systems and services.
+      As an added benefit, I use Puppet and Git on a daily basis to roll out changes to the monitoring for threshold changes, datapoint changes and graph changes.
 
   - name: Tetherless World Research Constellation
     location: Troy, New York
@@ -87,7 +92,11 @@ Experience:
     location: Cimmaron, New Mexico
     title: Work Crew
     duration: Summer 2006
-    description: Philmont receive over a hundred thousand campers every summer over a million acres, duties included maintaining trail, bear lines and campsites, to pristine condition. While living on the trail for 9 days at a time I learned to appreciate living and working in close  proximity to other people.
+    description: Philmont receives over one hundred thousand campers every summer across a million acres, duties included maintaining trail, bear lines and campsites, to pristine condition. While living on the trail for 9 days at a time I learned to appreciate living and working in close  proximity to other people.
+
+Projects:
+  - I maintain a Gentoo packages repository, with a variety of different monitoring tools and Perl packages that are not included in default Gentoo Portage. I've also customized a number of Gentoo build configurations to better fit my own needs.
+  - I have also taken to packaging a variety of small one-off C libraries to turn them into reusable Unix System libraries.
 
 Education:
   - B.S. Mechanical Engineering December 2011. State University of New York at Buffalo.

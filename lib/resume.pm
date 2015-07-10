@@ -47,9 +47,9 @@ sub _render
 			<div id="topbar">
 				<ul>
 					<li><a href="/resume">Resume</a></li>
-					<li><a href="/blog">Blog</a></li>
+					<!-- <li><a href="/blog">Blog</a></li> -->
 					<li><a href="/projects">Projects</a></li>
-					<li><a href="/docs">Technical Links</a></li>
+					<!-- <li><a href="/docs">Technical Links</a></li> -->
 				</ul>
 			</div>
 			<div id="content">
@@ -90,6 +90,16 @@ qq@
 		</ul>
 	</div>
 	[% END %]
+	</div>
+	<div class="clear-split"></div>
+</div>
+
+<div id="projects" class="section">
+	<span class="section_title">Projects</span>
+	<div class="section_data projects">
+		[% FOR project IN resume.Projects %]
+		<p class="project">[% project %]</p>
+		[% END %]
 	</div>
 	<div class="clear-split"></div>
 </div>
