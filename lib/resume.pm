@@ -36,6 +36,7 @@ sub _render
 		<meta name="description" content="The personal website of Dan Molik" />
 		<meta name="keywords" content="[% keywords.join(', ') %]" />
 		<meta name="author" content="[% author %]" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>[% title %]</title>
 		<link rel="stylesheet" href="/css/style.css" />
 		<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
@@ -72,7 +73,7 @@ sub _render
 	$html;
 }
 
-my $home_page   = _render;
+my $home_page   = _render undef, compress => 1;
 my $resume_page = _render
 qq@
 <div id="skills" class="section">
@@ -113,7 +114,7 @@ qq@
 		<span class="job_title">[% job.title %]</span>
 		<span class="job_location">[% job.location    %]</span>
 		<span class="job_duration">[% job.duration    %]</span>
-		<p class="job_description">[% job.description %]</p>
+		<div class="job_description">[% job.description %]</div>
 	</div>
 	[% END %]
 	</div>

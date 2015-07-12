@@ -45,12 +45,12 @@ Experience:
     location: Buffalo, New York
     title: Monitoring Tools Engineer
     duration: February 2013 to present
-    description: As the most senior Monitoring engineer, I am tasked with the performance and visibility of 4500 hosts, 120,000 checks, and 1.2 million datapoints, across 9 data-centers. I am responsible for a series of Nagios/Icinga high availability server pairs in each of the data-centers, along with dedicated log processing and offload worker servers. All other responsibilities are derived from this monitoring and visibility Mandate.
-      Over the past 2 years I have gone from knowing nothing about Perl, to using it to write stats checks, email step-through, and a synthetic/front end testing system, known as Lithium.
-      Lithium is a Selenium WebDriver/Full Stack framework for monitoring production, business critical, user-models, such as log-ins, Javascript rendered content, and menubar functionality. The key to Lithium's success is making the transition from a highly parallel web-browser domain to serial monitoring steps, seamless and straight forward.
-      Additionally my duties include a 24/7 on-call rotation, where I am called on a consistent basis, to consult on issues related to the operability of Synacor's systems.
-      I also consult with engineering and operational teams at Synacor as to the best method to monitor new systems and services.
-      As an added benefit, I use Puppet and Git on a daily basis to roll out changes to the monitoring for threshold changes, datapoint changes and graph changes.
+    description: <p>As the most senior Monitoring engineer, I am tasked with the performance and visibility of 4500 hosts, 120,000 checks, and 1.2 million datapoints, across 9 data-centers. I am responsible for a series of Nagios/Icinga high availability server pairs in each of the data-centers, along with dedicated log processing and offload worker servers. All other responsibilities are derived from this monitoring and visibility Mandate.</p>
+      <p>Over the past 2 years I have gone from knowing nothing about Perl, to using it to write stats checks, email step-through, and a synthetic/front end testing system, known as Lithium.</p>
+      <p>Lithium is a Selenium WebDriver/Full Stack framework for monitoring production, business critical, user-models, such as log-ins, Javascript rendered content, and menubar functionality. The key to Lithium's success is making the transition from a highly parallel web-browser domain to serial monitoring steps, seamless and straight forward.</p>
+      <p>Additionally my duties include a 24/7 on-call rotation, where I am called on a consistent basis, to consult on issues related to the operability of Synacor's systems.</p>
+      <p>I also consult with engineering and operational teams at Synacor as to the best method to monitor new systems and services.</p>
+      <p>As an added benefit, I use Puppet and Git on a daily basis to roll out changes to the monitoring for threshold changes, datapoint changes and graph changes.</p>
 
   - name: Tetherless World Research Constellation
     location: Troy, New York

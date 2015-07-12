@@ -60,7 +60,7 @@ a:hover {
 
 #topbar {
 	margin-bottom:  12px;
-	border-bottom:   1px solid #CCC;
+	/* border-bottom:   1px solid #CCC; */
 }
 
 #topbar ul {
@@ -117,6 +117,17 @@ span.job_duration {
 	display: block;
 	font-style: italic;
 }
+div.job_description p {
+	padding-bottom: 3px;
+}
 div.job {
 	margin-bottom: 12px;
+}
+
+p.project {
+	padding-bottom: 5px;
+}
+
+p.award {
+	padding-bottom: 5px;
 }
