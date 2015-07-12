@@ -42,9 +42,11 @@ a:hover {
 	border-top:  1px solid #CCC;
 }
 #header {
-	padding-top:   15px;
-	margin-bottom: 15px;
-	border-bottom: 1px solid #CCC;
+	padding-left:   12px;
+	padding-top:    15px;
+	padding-bottom:  2px;
+	margin-bottom:   4px;
+	border-bottom:   1px solid #CCC;
 }
 
 #header .title {
@@ -55,6 +57,11 @@ a:hover {
 }
 
 #header .title a:hover {
+}
+
+#topbar {
+	padding-left:  12px;
+	margin-bottom:  6px;
 }
 
 #topbar ul {
@@ -100,12 +107,15 @@ span.job_name {
 }
 span.job_title {
 	display: block;
+	font-style: italic;
 }
 span.job_location {
 	display: block;
+	font-style: italic;
 }
 span.job_duration {
 	display: block;
+	font-style: italic;
 }
 div.job {
 	margin-bottom: 12px;
