@@ -2,7 +2,7 @@ perl_modules /usr/share/nginx/perl/lib;
 perl_require resume.pm;
 
 server {
-	listen 80;
+	listen 80 reuseport;
 	server_name danmolik.com;
 
 	access_log /var/log/nginx/$server_name.log main;
